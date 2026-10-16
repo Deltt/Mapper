@@ -9,8 +9,8 @@ export type InitInput = RequestInfo | URL | Response | BufferSource | WebAssembl
 
 export interface InitOutput {
     readonly memory: WebAssembly.Memory;
-    readonly cmd: (a: number, b: number) => void;
     readonly start: () => void;
+    readonly cmd: (a: number, b: number) => void;
     readonly wasm_bindgen_5ac63e335cb1eb4c___convert__closures_____invoke___wasm_bindgen_5ac63e335cb1eb4c___JsValue__core_9b3796e30d99ddb7___result__Result_____wasm_bindgen_5ac63e335cb1eb4c___JsError___true_: (a: number, b: number, c: any) => [number, number];
     readonly wasm_bindgen_5ac63e335cb1eb4c___convert__closures_____invoke___js_sys_f8c41b1f23ed542e___Array__web_sys_b98d382aa3700f22___features__gen_ResizeObserver__ResizeObserver______true_: (a: number, b: number, c: any, d: any) => void;
     readonly wasm_bindgen_5ac63e335cb1eb4c___convert__closures_____invoke___wasm_bindgen_5ac63e335cb1eb4c___sys__JsNullable_wgpu_eff6e0d9ec453983___backend__webgpu__webgpu_sys__gen_GpuError__GpuError___core_9b3796e30d99ddb7___result__Result_____wasm_bindgen_5ac63e335cb1eb4c___JsError___true_: (a: number, b: number, c: any) => [number, number];

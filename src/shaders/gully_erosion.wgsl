@@ -102,7 +102,10 @@ fn texel_falloff(global_texel: vec2<i32>) -> f32 {
 }
 
 fn lattice_value(lattice_point: vec2<i32>) -> f32 {
-    let hashed = pcg_hash(bitcast<u32>(lattice_point.x) * 1597334677u ^ bitcast<u32>(lattice_point.y) * 3812015801u);
+    let hashed = pcg_hash(
+        (bitcast<u32>(lattice_point.x) * 1597334677u)
+        ^ (bitcast<u32>(lattice_point.y) * 3812015801u)
+    );
     return f32(hashed) * (1.0 / 4294967296.0);
 }
 
