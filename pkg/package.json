@@ -1,0 +1,15 @@
+{
+  "name": "dummy_app",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "dummy_app_bg.wasm",
+    "dummy_app.js",
+    "dummy_app.d.ts"
+  ],
+  "main": "dummy_app.js",
+  "types": "dummy_app.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
