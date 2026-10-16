@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dummy App</title>
+  <style>
+    html, body { margin: 0; padding: 0; overflow: hidden; }
+    canvas { display: block; width: 100vw; height: 100vh; }
+  </style>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <script type="module">
+    import init, * as dummy_app from "./pkg/dummy_app.js";
+    await init();
+    window.dummy_app = dummy_app;
+    window.cmd = dummy_app.cmd;
+  </script>
+</body>
+</html>
